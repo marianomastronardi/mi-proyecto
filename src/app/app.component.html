@@ -1,0 +1,23 @@
+<h3>Calculadora</h3>
+<br>
+<div class="mb-3 row">
+    <label for="edadUno" class="form-label">Edad Uno</label>
+    <input type="text" class="form-control" id="edadUno" placeholder="Edad Uno" [(ngModel)]="iEdadUno">
+
+    <label for="edadDos" class="form-label">Edad Dos</label>
+    <input type="text" class="form-control" id="edadDos" placeholder="Edad Dos" [(ngModel)]="iEdadDos">
+</div>
+<br>
+<h3>Resultado</h3>
+<div class="mb-3">
+    <label for="avg" class="form-label">Promedio</label>
+    <input type="text" class="form-control" id="avg" placeholder="Promedio" [(ngModel)]="iPromedio">
+
+    <label for="suma" class="form-label">Suma</label>
+    <input type="text" class="form-control" id="suma" placeholder="Suma" [(ngModel)]="iSuma">
+</div>
+<br>
+<button class="btn btn primary" (click)="promedio()">Calcular Promedio</button>
+<button class="btn btn secondary" (click)="sumar()">Sumar</button>
+
+<router-outlet></router-outlet>
